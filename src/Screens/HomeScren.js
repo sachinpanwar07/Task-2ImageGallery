@@ -3,7 +3,6 @@ import { View, Text, Image, FlatList, ActivityIndicator, TouchableOpacity, useWi
 import NetInfo from '@react-native-community/netinfo';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import axios from 'axios';
-
 const HomeScreen = ({ navigation }) => {
   const { width } = useWindowDimensions();
   const itemWidth = 120;
@@ -11,7 +10,6 @@ const HomeScreen = ({ navigation }) => {
   const [photos, setPhotos] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
-
   useEffect(() => {
     fetchData();
   }, []);

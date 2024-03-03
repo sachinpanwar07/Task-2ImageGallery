@@ -1,7 +1,6 @@
 import { StatusBar, StyleSheet, View } from 'react-native';
 import React from 'react';
 import MainStack from './src/Navigation/MainStack';
-
 const App = () => {
   return (
     <View style={styles.container}>
